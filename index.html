@@ -4,7 +4,42 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
+        
+       <script type="text/javascript"></script>
+      
+       <div id=timer></div>
+    <script type="text/javascript">
+  var timeoutHandle;
+
+  function countdown(minutes, seconds) {
+    var seconds = 30;
+    var mins = minutes
+
+    function tick() {
+      var counter = document.getElementById("timer");
+      var current_minutes = mins - 1
+      seconds--;
+      counter.innerHTML =
+        current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+      if (seconds > 0) {
+        timeoutHandle = setTimeout(tick, 1000);
+      } else {
+
+        if (mins > 1) {
+
+          
+          setTimeout(function() {
+            countdown(mins - 1);
+          }, 1000);
+
+        }
+      }
+    }
+    tick();
+  }
+
+  countdown(2);
+</script>
 
      </head>
      <body>
@@ -13,14 +48,8 @@
         </div> 
             <div id="question-container">
             <div id="boxInImage">
-            </div>
-            
- 
-
-    
+                    </div>  
         
-
-
 
         <script type="text/javascript" src="assets/triviagame.js">
         </script>

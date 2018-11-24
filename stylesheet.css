@@ -2,7 +2,8 @@ h1 {
     color: #FFF;
     background-color: #232323;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px
-    #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+    #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    font-size: 55px;
       
 }
 
@@ -32,7 +33,7 @@ p {
 #boxInImage {
 width:50%;
 background:white;
-height: 90%;
+height: 95%;
 padding: 10px;
 display:flex;
 justify-content: center;
@@ -51,6 +52,13 @@ flex-direction:column;
 }
 .title-container {
     text-align: center;
+}
+
+#timer{
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+
 }
 
 
